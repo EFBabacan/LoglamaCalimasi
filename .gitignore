@@ -1,0 +1,23 @@
+# Visual Studio generated files
+.vs/
+[Bb]in/
+[Oo]bj/
+*.suo
+*.user
+
+# User-specific files
+*.[Cc]ache
+*.[Pp]ublish.xml
+*.[Pp]ublishsettings.user.xml
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+
+# Others
+*.docmd
+*.pdb
+*.tmp
+*.bak
