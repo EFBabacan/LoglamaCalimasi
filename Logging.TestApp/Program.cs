@@ -1,4 +1,4 @@
-﻿using EFBabacan.Logging; // 1. Kendi loglama kütüphanemizi çağırıyoruz.
+﻿using PostaGuvercini.Logging; // 1. Kendi loglama kütüphanemizi çağırıyoruz.
 using Microsoft.Extensions.Configuration;
 using Serilog;
 using System;

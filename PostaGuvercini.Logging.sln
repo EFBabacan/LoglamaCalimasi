@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36414.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFBabacan.Logging", "PostaGüvercini.Logging\EFBabacan.Logging.csproj", "{6DA2BDCB-099B-4018-BA6C-1746FB3C3C93}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logging.TestApp", "Logging.TestApp\Logging.TestApp.csproj", "{A5418DD2-5929-4E94-863F-4F00A241BA28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostaGuvercini.Logging", "PostaGuvercini.Logging\PostaGuvercini.Logging.csproj", "{D1E2D5A8-11AA-5587-E188-E591ECE23DCD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6DA2BDCB-099B-4018-BA6C-1746FB3C3C93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6DA2BDCB-099B-4018-BA6C-1746FB3C3C93}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6DA2BDCB-099B-4018-BA6C-1746FB3C3C93}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6DA2BDCB-099B-4018-BA6C-1746FB3C3C93}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A5418DD2-5929-4E94-863F-4F00A241BA28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A5418DD2-5929-4E94-863F-4F00A241BA28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5418DD2-5929-4E94-863F-4F00A241BA28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5418DD2-5929-4E94-863F-4F00A241BA28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1E2D5A8-11AA-5587-E188-E591ECE23DCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1E2D5A8-11AA-5587-E188-E591ECE23DCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1E2D5A8-11AA-5587-E188-E591ECE23DCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1E2D5A8-11AA-5587-E188-E591ECE23DCD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

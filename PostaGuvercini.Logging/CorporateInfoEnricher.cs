@@ -2,7 +2,7 @@
 using Serilog.Events;
 using System;
 
-namespace EFBabacan.Logging
+namespace PostaGuvercini.Logging
 {
     // Bu arayüzü implemente etmek, Serilog'a bu sınıfın bir "zenginleştirici" olduğunu söyler.
     // Bu bir sözleşmedir: "Ben ILogEventEnricher'ım, yani Enrich adında bir metodum olmak zorunda."

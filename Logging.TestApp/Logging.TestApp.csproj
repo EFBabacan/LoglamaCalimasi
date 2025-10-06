@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\PostaGüvercini.Logging\EFBabacan.Logging.csproj" />
+    <ProjectReference Include="C:\Users\ensfr\source\repos\PostaGuvercini.Logging\PostaGuvercini.Logging\PostaGuvercini.Logging.csproj" />
   </ItemGroup>
 
   <ItemGroup>
