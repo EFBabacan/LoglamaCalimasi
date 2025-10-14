@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logging.TestApp", "Logging.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostaGuvercini.Logging", "PostaGuvercini.Logging\PostaGuvercini.Logging.csproj", "{D1E2D5A8-11AA-5587-E188-E591ECE23DCD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logging.WebAppTesting", "Logging.WebAppTesting\Logging.WebAppTesting.csproj", "{0E911A7B-7D59-497E-978E-DB626A2D81E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logging.WebApiTest", "Logging.WebApiTest\Logging.WebApiTest.csproj", "{9703F4F2-4CE7-4136-A9B3-AEDB3E4398DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{D1E2D5A8-11AA-5587-E188-E591ECE23DCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1E2D5A8-11AA-5587-E188-E591ECE23DCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1E2D5A8-11AA-5587-E188-E591ECE23DCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E911A7B-7D59-497E-978E-DB626A2D81E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E911A7B-7D59-497E-978E-DB626A2D81E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E911A7B-7D59-497E-978E-DB626A2D81E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E911A7B-7D59-497E-978E-DB626A2D81E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9703F4F2-4CE7-4136-A9B3-AEDB3E4398DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9703F4F2-4CE7-4136-A9B3-AEDB3E4398DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9703F4F2-4CE7-4136-A9B3-AEDB3E4398DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9703F4F2-4CE7-4136-A9B3-AEDB3E4398DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

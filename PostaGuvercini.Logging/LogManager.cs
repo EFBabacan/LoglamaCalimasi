@@ -1,6 +1,8 @@
 ﻿// .NET'in standart Configuration arayüzünü kullanmak için bu using ifadesi gerekli.
 using Microsoft.Extensions.Configuration;
 using Serilog;
+// Yeni eklediğimiz paketi using ile çağırıyoruz.
+using Serilog.Sinks.Async;
 
 namespace PostaGuvercini.Logging
 {
@@ -8,21 +10,26 @@ namespace PostaGuvercini.Logging
     //doğrudan LogManager.Configure(...) şeklinde kullanabilmemizi sağlar.
     public static class LogManager
     {
-        // METODUN İMZASI DEĞİŞTİ!
-        // Artık dışarıdan bir 'IConfiguration' nesnesi alıyor.
         public static void Configure(IConfiguration configuration)
         {
             Log.Logger = new LoggerConfiguration()
-                // Kendi yazdığımız Enricher'ı yapılandırmaya dahil ediyoruz.
                 .Enrich.With<CorporateInfoEnricher>()
-                .ReadFrom.Configuration(configuration)
+                .WriteTo.Async(a => a.Console()) 
+                .WriteTo.Async(a => a.File(
+                    path: "logs/log-.txt",
+                    rollingInterval: RollingInterval.Day,
+                    outputTemplate: "{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{Level:u3}] {Message:lj} {Properties:j}{NewLine}{Exception}"
+                ))
+                .WriteTo.Async(a => a.Seq(
+                    serverUrl: configuration["Serilog:WriteTo:2:Args:serverUrl"] ?? "http://localhost:5341"
+                ))
                 .CreateLogger();
-            //.ReadFrom.Configuration(configuration): Serilog'a "git bütün ayarlarını bu configuration nesnesinin içinden oku" der.
-            Log.Information("Loglama altyapısı, appsettings.json dosyasından yapılandırıldı.");
+
+            Log.Information("Asenkron loglama altyapısı başarıyla yapılandırıldı.");
         }
     }
 }
-//public static class LogManager :
+
 //Configure(IConfiguration configuration): Bu tek metot, tüm loglama sistemini ayağa kaldırır.
 //Parametre olarak appsettings.json dosyasından okunan ayarları alır.
 //.Enrich.With<CorporateInfoEnricher>(): Burası işin sihirli kısmıdır. Serilog'a der ki:
