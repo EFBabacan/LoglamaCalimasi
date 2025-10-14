@@ -1,17 +1,11 @@
-﻿using Microsoft.Extensions.Hosting; // IHostBuilder için gerekli
+﻿using Microsoft.Extensions.Hosting;
 using Serilog;
 using Serilog.Core;
 using Serilog.Sinks.PeriodicBatching;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 
 namespace PostaGuvercini.Logging
 {
-    // Extension metotlar her zaman "public static" bir sınıf içinde olmalıdır.
     public static class HostBuilderExtensions
     {
         public static IHostBuilder UseCustomSerilog(this IHostBuilder hostBuilder)
@@ -22,29 +16,24 @@ namespace PostaGuvercini.Logging
             {
                 var configuration = context.Configuration;
 
+                // Serilog yapılandırması
                 loggerConfiguration
-                    .MinimumLevel.ControlledBy(levelSwitch)
-                    .Destructure.With<SensitiveDataMaskingPolicy>()
-                    .Enrich.FromLogContext()
-                    .Enrich.With<CorporateInfoEnricher>()
-                    .WriteTo.Console()
-                    .WriteTo.PeriodicBatching(pbs => pbs.File(
-                        path: "logs/log-.txt",
-                        rollingInterval: RollingInterval.Day,
-                        outputTemplate: "{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{Level:u3}] {CorrelationId} {Message:lj} {Properties:j}{NewLine}{Exception}"
-                    ), new PeriodicBatchingSinkOptions
-                    {
-                        BatchSizeLimit = 100,
-                        Period = TimeSpan.FromSeconds(5),
-                        EagerlyEmitFirstEvent = true
-                    })
-                    .WriteTo.PeriodicBatching(pbs => pbs.Seq(
-                        serverUrl: configuration["Serilog:WriteTo:2:Args:serverUrl"] ?? "http://localhost:5341"
-                    ), new PeriodicBatchingSinkOptions
-                    {
-                        BatchSizeLimit = 100,
-                        Period = TimeSpan.FromSeconds(5)
-                    })
+                    .MinimumLevel.ControlledBy(levelSwitch)  // Log seviyesini kontrol et
+                    .Destructure.With<SensitiveDataMaskingPolicy>()  // Özel veri maskeleme
+                    .Enrich.FromLogContext()  // Log context bilgileri ekle
+                    .Enrich.With<CorporateInfoEnricher>()  // Özel zenginleştirici
+                    .WriteTo.Console()  // Konsola log yaz
+                    .WriteTo.Sink(new BatchedFileSink(
+                        filePath: "logs/batched-log.txt",  // Log dosyasının yolu
+                        options: new PeriodicBatchingSinkOptions
+                        {
+                            BatchSizeLimit = 100,  // 100 log biriktiğinde gönderim yapılır
+                            Period = TimeSpan.FromSeconds(5),  // Her 5 saniyede bir gönderim yapılır
+                            EagerlyEmitFirstEvent = true  // İlk log geldiğinde hemen gönder
+                        }))
+                    .WriteTo.Seq(
+                        serverUrl: configuration["Serilog:WriteTo:2:Args:serverUrl"] ?? "http://localhost:5341"  // Seq URL
+                    )
                     .ReadFrom.Services(services);
             });
 
