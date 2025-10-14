@@ -8,16 +8,14 @@ using System.Threading.Tasks;
 
 namespace PostaGuvercini.Logging
 {
-    // Özel BatchedFileSink sınıfı: Logları topluca dosyaya yazan sink
+    // Custom BatchedFileSink: Logları topluca dosyaya yazan özel sink
     public class BatchedFileSink : PeriodicBatchingSink
     {
         private readonly string _filePath;
 
-        // PeriodicBatchingSink'i özelleştirmek için constructor
+        // 'options' nesnesindeki parametreleri base sınıfa ayrı ayrı gönderiyoruz.
         public BatchedFileSink(string filePath, PeriodicBatchingSinkOptions options)
-    // DEĞİŞİKLİK BURADA: 'options' nesnesinin içindeki değerleri
-    // temel sınıfa ayrı ayrı parametreler olarak gönderiyoruz.
-    : base(options.BatchSizeLimit, options.Period)
+            : base(options.BatchSizeLimit, options.Period)  // Base sınıf PeriodicBatchingSink constructor'ına parametreleri gönderiyoruz
         {
             _filePath = filePath ?? throw new ArgumentNullException(nameof(filePath));
         }

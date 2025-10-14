@@ -28,3 +28,30 @@
 2025-10-14 16:11:37.895 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 119.7116ms 
 2025-10-14 16:11:37.895 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/v1/swagger.json""" - null null 
 2025-10-14 16:11:37.895 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 32.8581ms 
+2025-10-14 16:15:37.255 +03:00 [Information] Now listening on: "https://localhost:7127" 
+2025-10-14 16:15:37.269 +03:00 [Information] Now listening on: "http://localhost:5258" 
+2025-10-14 16:15:42.285 +03:00 [Information] Application started. Press Ctrl+C to shut down. 
+2025-10-14 16:15:42.285 +03:00 [Information] Hosting environment: "Development" 
+2025-10-14 16:15:42.285 +03:00 [Information] Content root path: "C:\Users\ensfr\source\repos\PostaGuvercini.Logging\Logging.WebApiTest" 
+2025-10-14 16:15:42.285 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/swagger""" - null null 
+2025-10-14 16:15:42.285 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/swagger""" - 301 0 null 94.1338ms 
+2025-10-14 16:15:42.285 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/index.html""" - null null 
+2025-10-14 16:15:42.285 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 63.147ms 
+2025-10-14 16:15:42.285 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/swagger-ui-bundle.js""" - null null 
+2025-10-14 16:15:42.285 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/_vs/browserLink""" - null null 
+2025-10-14 16:15:42.285 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/_framework/aspnetcore-browser-refresh.js""" - null null 
+2025-10-14 16:15:42.285 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/swagger-ui.css""" - null null 
+2025-10-14 16:15:42.285 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/swagger-ui-standalone-preset.js""" - null null 
+2025-10-14 16:15:42.285 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/_framework/aspnetcore-browser-refresh.js""" - 200 16521 "application/javascript; charset=utf-8" 30.5484ms 
+2025-10-14 16:15:42.285 +03:00 [Information] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"' 
+2025-10-14 16:15:42.285 +03:00 [Information] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"' 
+2025-10-14 16:15:42.285 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/swagger-ui.css""" - 200 143943 "text/css" 68.5558ms 
+2025-10-14 16:15:42.285 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/swagger-ui-standalone-preset.js""" - 200 339486 "text/javascript" 68.4508ms 
+2025-10-14 16:15:42.285 +03:00 [Information] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"' 
+2025-10-14 16:15:42.285 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/swagger-ui-bundle.js""" - 200 1096145 "text/javascript" 91.5552ms 
+2025-10-14 16:15:42.285 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 91.9696ms 
+2025-10-14 16:15:42.285 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/v1/swagger.json""" - null null 
+2025-10-14 16:15:42.285 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 6.5897ms 
+2025-10-14 16:15:42.285 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/favicon-32x32.png""" - null null 
+2025-10-14 16:15:42.285 +03:00 [Information] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"' 
+2025-10-14 16:15:42.285 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/favicon-32x32.png""" - 200 628 "image/png" 6.5845ms 
