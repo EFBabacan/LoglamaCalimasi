@@ -1,0 +1,30 @@
+2025-10-14 16:08:56.489 +03:00 [Information] Now listening on: "https://localhost:7127" 
+2025-10-14 16:08:56.497 +03:00 [Information] Now listening on: "http://localhost:5258" 
+2025-10-14 16:09:01.552 +03:00 [Information] Application started. Press Ctrl+C to shut down. 
+2025-10-14 16:09:01.552 +03:00 [Information] Hosting environment: "Development" 
+2025-10-14 16:09:01.552 +03:00 [Information] Content root path: "C:\Users\ensfr\source\repos\PostaGuvercini.Logging\Logging.WebApiTest" 
+2025-10-14 16:09:01.552 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/index.html""" - null null 
+2025-10-14 16:09:01.552 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 174.9719ms 
+2025-10-14 16:09:01.552 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/index.js""" - null null 
+2025-10-14 16:09:01.552 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/_framework/aspnetcore-browser-refresh.js""" - null null 
+2025-10-14 16:09:01.552 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/_vs/browserLink""" - null null 
+2025-10-14 16:09:01.552 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/index.js""" - 200 null "application/javascript;charset=utf-8" 20.2698ms 
+2025-10-14 16:09:01.552 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/index.css""" - null null 
+2025-10-14 16:09:01.552 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/_framework/aspnetcore-browser-refresh.js""" - 200 16521 "application/javascript; charset=utf-8" 64.4385ms 
+2025-10-14 16:09:01.552 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/index.css""" - 200 152 "text/css" 101.6777ms 
+2025-10-14 16:09:01.552 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 293.6855ms 
+2025-10-14 16:09:01.552 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/v1/swagger.json""" - null null 
+2025-10-14 16:09:01.552 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/favicon-32x32.png""" - null null 
+2025-10-14 16:09:01.552 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 23.4357ms 
+2025-10-14 16:09:01.552 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/favicon-32x32.png""" - 200 628 "image/png" 5.9218ms 
+2025-10-14 16:11:32.879 +03:00 [Information] Now listening on: "https://localhost:7127" 
+2025-10-14 16:11:32.885 +03:00 [Information] Now listening on: "http://localhost:5258" 
+2025-10-14 16:11:37.895 +03:00 [Information] Application started. Press Ctrl+C to shut down. 
+2025-10-14 16:11:37.895 +03:00 [Information] Hosting environment: "Development" 
+2025-10-14 16:11:37.895 +03:00 [Information] Content root path: "C:\Users\ensfr\source\repos\PostaGuvercini.Logging\Logging.WebApiTest" 
+2025-10-14 16:11:37.895 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/_vs/browserLink""" - null null 
+2025-10-14 16:11:37.895 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/_framework/aspnetcore-browser-refresh.js""" - null null 
+2025-10-14 16:11:37.895 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/_framework/aspnetcore-browser-refresh.js""" - 200 16521 "application/javascript; charset=utf-8" 56.1501ms 
+2025-10-14 16:11:37.895 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 119.7116ms 
+2025-10-14 16:11:37.895 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/v1/swagger.json""" - null null 
+2025-10-14 16:11:37.895 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 32.8581ms 

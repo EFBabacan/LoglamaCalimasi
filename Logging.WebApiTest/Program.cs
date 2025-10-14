@@ -1,13 +1,17 @@
-
-using PostaGuvercini.Logging;
+using PostaGuvercini.Logging; // Kendi kütüphanemizi ekliyoruz
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
+//******************************************************************
+// DEÐÝÞÝKLÝK 1: ESKÝ SERILOG YAPILANDIRMASINI SÝLÝP BUNU EKLÝYORUZ
+// builder.Host.UseSerilog(...); satýrlarý yerine kendi metodumuzu çaðýrýyoruz.
 builder.Host.UseCustomSerilog();
-// Add services to the container.
+//******************************************************************
 
+
+// Add services to the container.
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -22,13 +26,13 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseStaticFiles();
+//******************************************************************
+// DEÐÝÞÝKLÝK 2: CORRELATION ID MIDDLEWARE'ÝNÝ EKLÝYORUZ
+// Bu satýr, her isteðe bir kimlik atayacak.
+app.UseCorrelationId();
+//******************************************************************
 
-app.UseRouting(); // <-- Bundan sonra
-
-app.UseCorrelationId(); // <-- BÝZÝM MÝDDLEWARE'ÝMÝZ
-
-app.UseAuthorization(); // <-- Bundan önce
+app.UseAuthorization();
 
 app.MapControllers();
 

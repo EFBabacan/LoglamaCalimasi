@@ -15,7 +15,9 @@ namespace PostaGuvercini.Logging
 
         // PeriodicBatchingSink'i özelleştirmek için constructor
         public BatchedFileSink(string filePath, PeriodicBatchingSinkOptions options)
-            : base(options)  // PeriodicBatchingSink constructor'ı
+    // DEĞİŞİKLİK BURADA: 'options' nesnesinin içindeki değerleri
+    // temel sınıfa ayrı ayrı parametreler olarak gönderiyoruz.
+    : base(options.BatchSizeLimit, options.Period)
         {
             _filePath = filePath ?? throw new ArgumentNullException(nameof(filePath));
         }
