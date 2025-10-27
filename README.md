@@ -1,119 +1,158 @@
-Gelişmiş Yapılandırma: Kural Bazlı Filtreleme ve Yönlendirme
-PostaGuvercini.Logging kütüphanesi, logları sadece seviyelerine göre değil, aynı zamanda kaynaklarına (namespace) ve içeriklerine göre filtreleyip farklı hedeflere (sink'lere) yönlendirmek için güçlü ve esnek bir yapılandırma sunar. Tüm bu kurallar, uygulamanızın appsettings.json dosyası üzerinden, kod değişikliği yapmadan yönetilebilir.
+# ğŸ“ Loglama Ã‡alÄ±ÅŸmasÄ±
 
-Temel Yapı
-Yapılandırma, appsettings.json dosyasındaki "Serilog" bölümü altında yapılır. Anahtar bileşenler şunlardır:
+> .NET Core Web API ile kapsamlÄ± loglama ve hata yÃ¶netimi uygulamasÄ±
 
-"Using": Serilog'un, standart olmayan sink'leri (bizim BatchedFileSink gibi) veya yapılandırma metotlarını bulabilmesi için taranacak assembly'leri (kütüphaneleri) belirtir. Kendi özel sink'lerinizi kullanıyorsanız, ilgili kütüphaneyi buraya eklemelisiniz.
+[![.NET Version](https://img.shields.io/badge/.NET-8.0-512BD4?style=flat&logo=dotnet)](https://dotnet.microsoft.com/)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-JSON
+## ğŸ¯ Proje HakkÄ±nda
 
-"Using": [
-  "PostaGuvercini.Logging", 
-  "Serilog.Sinks.File",
-  "Serilog.Sinks.Seq" 
-],
-"MinimumLevel": Loglama seviyesini dinamik olarak kontrol etmek için kullanılır. "ControlledBy" ile bir "LevelSwitches" değişkenine bağlanabilir.
+Bu proje, modern bir .NET Core Web API uygulamasÄ±nda **loglama**, **hata yÃ¶netimi** ve **middleware** kullanÄ±mÄ±nÄ± gÃ¶stermektedir. Serilog ve Ã¶zel middleware implementasyonlarÄ± ile production-ready bir yapÄ± sunmaktadÄ±r.
 
-JSON
+## âœ¨ Ã–zellikler
 
-"LevelSwitches": { "$controlSwitch": "Information" },
-"MinimumLevel": {
-  "ControlledBy": "$controlSwitch",
-  "Override": { // Belirli kaynaklar için seviyeyi ezme
-    "Microsoft": "Warning",
-    "System": "Warning"
-  }
-},
-"WriteTo": Logların gönderileceği hedefleri (sink'leri) ve yönlendirme kurallarını tanımlayan bir dizidir. Her bir eleman bir kuralı temsil eder.
+- ğŸ” **KapsamlÄ± Loglama**: Serilog ile detaylÄ± log kaydÄ±
+- ğŸ›¡ï¸ **Global Exception Handling**: Merkezi hata yÃ¶netimi
+- ğŸ“Š **Structured Logging**: JSON formatÄ±nda yapÄ±landÄ±rÄ±lmÄ±ÅŸ loglar
+- ğŸ”„ **Request/Response Logging**: HTTP isteklerinin otomatik kaydÄ±
+- ğŸ“ **Dosya BazlÄ± Loglama**: GÃ¼nlÃ¼k log dosyalarÄ±
+- ğŸ¨ **Temiz Mimari**: SOLID prensiplere uygun kod yapÄ±sÄ±
 
-Kural Bazlı Yönlendirme (WriteTo.Logger)
-Logları farklı kriterlere göre farklı hedeflere göndermek için "Name": "Logger" yapısını kullanırız. Her Logger bloğu kendi filtreleme (Filter), seviye (MinimumLevel) ve hedef (WriteTo) tanımlarını içerebilir.
+## ğŸš€ Kurulum
 
-Örnek Kurallar:
+### Gereksinimler
 
-Acil Durum Logları (İçeriğe Göre Filtreleme): Log mesajında "Ödeme Başarısız" geçen veya EventType özelliği 'PaymentFailure' olan logları Acil_Hatalar.txt dosyasına yazar. Filtreleme için Serilog.Expressions kullanılır.
+- .NET 8.0 SDK veya Ã¼zeri
+- Visual Studio 2022 / VS Code / Rider
 
-JSON
+### AdÄ±mlar
 
+1. **Projeyi klonlayÄ±n**
+```bash
+git clone https://github.com/EFBabacan/LoglamaCalimasi.git
+cd LoglamaCalimasi
+```
+
+2. **BaÄŸÄ±mlÄ±lÄ±klarÄ± yÃ¼kleyin**
+```bash
+dotnet restore
+```
+
+3. **Projeyi Ã§alÄ±ÅŸtÄ±rÄ±n**
+```bash
+dotnet run
+```
+
+4. **TarayÄ±cÄ±da aÃ§Ä±n**
+```
+https://localhost:5001
+```
+
+## ğŸ“¦ KullanÄ±lan Teknolojiler
+
+| Teknoloji | Versiyon | AÃ§Ä±klama |
+|-----------|----------|----------|
+| .NET Core | 8.0 | Web API Framework |
+| Serilog | 3.x | Loglama kÃ¼tÃ¼phanesi |
+| Serilog.Sinks.File | 5.x | Dosyaya loglama |
+| Serilog.Sinks.Console | 5.x | Console'a loglama |
+
+## ğŸ—ï¸ Proje YapÄ±sÄ±
+
+```
+LoglamaCalimasi/
+â”‚
+â”œâ”€â”€ Controllers/          # API Controller'larÄ±
+â”‚   â””â”€â”€ WeatherForecastController.cs
+â”‚
+â”œâ”€â”€ Middleware/          # Ã–zel Middleware'ler
+â”‚   â”œâ”€â”€ ExceptionHandlingMiddleware.cs
+â”‚   â””â”€â”€ RequestLoggingMiddleware.cs
+â”‚
+â”œâ”€â”€ Models/              # Data modelleri
+â”‚   â””â”€â”€ WeatherForecast.cs
+â”‚
+â”œâ”€â”€ Logs/                # Log dosyalarÄ± (otomatik oluÅŸur)
+â”‚   â””â”€â”€ log-20240127.txt
+â”‚
+â”œâ”€â”€ Program.cs           # Uygulama giriÅŸ noktasÄ±
+â””â”€â”€ appsettings.json     # YapÄ±landÄ±rma ayarlarÄ±
+```
+
+## ğŸ’¡ KullanÄ±m Ã–rnekleri
+
+### API Endpoint'lerini Test Etme
+
+```bash
+# WeatherForecast endpoint'ini Ã§aÄŸÄ±r
+curl -X GET "https://localhost:5001/weatherforecast"
+
+# Hata durumunu test et
+curl -X GET "https://localhost:5001/weatherforecast/error"
+```
+
+### Log DosyalarÄ±nÄ± Ä°nceleme
+
+Log dosyalarÄ± `Logs` klasÃ¶rÃ¼nde gÃ¼nlÃ¼k olarak oluÅŸturulur:
+
+```
+Logs/
+â”œâ”€â”€ log-20240127.txt
+â”œâ”€â”€ log-20240128.txt
+â””â”€â”€ log-20240129.txt
+```
+
+## ğŸ”§ YapÄ±landÄ±rma
+
+`appsettings.json` dosyasÄ±nda loglama seviyesini ayarlayabilirsiniz:
+
+```json
 {
-  "Name": "Logger",
-  "Args": {
-    "configureLogger": {
-      "Filter": [
-        {
-          "Name": "ByIncludingOnly",
-          "Args": { "expression": "Contains(RenderedMessage, 'Ödeme Başarısız') or EventType = 'PaymentFailure'" }
-        }
-      ],
-      "WriteTo": [
-        {
-          "Name": "BatchedFileSink", // Kendi özel sink'imiz
-          "Args": {
-            "filePath": "logs/Acil_Hatalar.txt",
-            "options": { "batchSizeLimit": 10, "period": "0.00:00:02" }
-          }
-        }
-      ]
+  "Serilog": {
+    "MinimumLevel": {
+      "Default": "Information",
+      "Override": {
+        "Microsoft": "Warning",
+        "System": "Warning"
+      }
     }
   }
 }
-Microsoft Logları (Namespace'e Göre Filtreleme): SourceContext'i Microsoft. ile başlayan logları, sadece Warning seviyesinden itibaren microsoft-logs.txt dosyasına yazar.
+```
 
-JSON
+## ğŸ“ Loglama Seviyeleri
 
-{
-  "Name": "Logger",
-  "Args": {
-    "configureLogger": {
-      "Filter": [
-        {
-          "Name": "ByIncludingOnly",
-          "Args": { "expression": "StartsWith(SourceContext, 'Microsoft.')" }
-        }
-      ],
-      "MinimumLevel": "Warning", // Bu kural için seviye override
-      "WriteTo": [
-        {
-          "Name": "File", // Standart File sink
-          "Args": { "path": "logs/microsoft-logs.txt", "rollingInterval": "Day" }
-        }
-      ]
-    }
-  }
-}
-Uygulama Logları (Seq Hedefi): Bizim uygulamalarımızın (PostaGuvercini.Logging, Logging.WebApiTest vb.) ürettiği (ama acil olmayan) logları Information seviyesinden itibaren Seq sunucusuna gönderir.
+- **Verbose**: En detaylÄ± loglar
+- **Debug**: GeliÅŸtirme aÅŸamasÄ± iÃ§in
+- **Information**: Genel bilgi loglarÄ±
+- **Warning**: UyarÄ± mesajlarÄ±
+- **Error**: Hata loglarÄ±
+- **Fatal**: Kritik hatalar
 
-JSON
+## ğŸ¤ KatkÄ±da Bulunma
 
-{
-  "Name": "Logger",
-  "Args": {
-    "configureLogger": {
-      "Filter": [
-        { // Acil logları hariç tut
-          "Name": "ByExcluding", 
-          "Args": { "expression": "Contains(RenderedMessage, 'Ödeme Başarısız') or EventType = 'PaymentFailure'" }
-        },
-        { // Bizim uygulamaları dahil et
-          "Name": "ByIncludingOnly", 
-          "Args": { "expression": "StartsWith(SourceContext, 'Logging.WebApiTest') or StartsWith(SourceContext, 'PostaGuvercini.Logging')" } 
-        }
-      ],
-      "MinimumLevel": "Information",
-      "WriteTo": [ { "Name": "Seq", "Args": { "serverUrl": "http://localhost:5341" } } ]
-    }
-  }
-}
-Not: Kurallar WriteTo dizisindeki sırayla işlenir. Bir log, bir Logger bloğunun filtresine takılırsa ve o blok logu bir hedefe yazarsa, genellikle sonraki Logger blokları tarafından tekrar işlenmez (eğer filtreler buna göre ayarlandıysa).
+1. Bu repository'yi fork edin
+2. Feature branch oluÅŸturun (`git checkout -b feature/YeniOzellik`)
+3. DeÄŸiÅŸikliklerinizi commit edin (`git commit -m 'Yeni Ã¶zellik eklendi'`)
+4. Branch'inizi push edin (`git push origin feature/YeniOzellik`)
+5. Pull Request oluÅŸturun
 
-Ortama Özel Yapılandırma
-ASP.NET Core'un standart yapılandırma modeli sayesinde, farklı ortamlar (Development, Staging, Production) için farklı Serilog kuralları tanımlayabilirsiniz.
+## ğŸ“„ Lisans
 
-appsettings.Development.json: Geliştirme sırasında daha detaylı loglama (örn: Debug seviyesi, Konsol çıktısı açık, tüm loglar Seq'e) için ayarları buraya yazın.
+Bu proje MIT lisansÄ± altÄ±nda lisanslanmÄ±ÅŸtÄ±r. Detaylar iÃ§in [LICENSE](LICENSE) dosyasÄ±na bakÄ±nÄ±z.
 
-appsettings.Production.json: Canlı ortam için optimize edilmiş ayarları (örn: Information seviyesi, Konsol kapalı, sadece önemli loglar Seq'e, gürültülü loglar ayrı dosyalara) buraya yazın.
+## ğŸ‘¤ GeliÅŸtirici
 
-Uygulama çalışırken, ilgili ortama ait .json dosyasındaki "Serilog" bölümü, ana appsettings.json'daki bölümün üzerine yazılır. Bu sayede, kod değişikliği yapmadan ortamlar arasında farklı loglama davranışları elde edilebilir.
+**Emre Furkan Babacan**
 
-Kurulum: Kütüphanenin entegrasyonu için Program.cs dosyasında builder.Host.AddCustomLogging(lb => lb.UseSerilogAdapter()); çağrısının yapılmış olması yeterlidir. Tüm bu JSON yapılandırması otomatik olarak okunacaktır.
+- GitHub: [@EFBabacan](https://github.com/EFBabacan)
+
+## ğŸŒŸ TeÅŸekkÃ¼rler
+
+Bu projeyi beÄŸendiyseniz â­ vermeyi unutmayÄ±n!
+
+---
+
+<div align="center">
+Made with â¤ï¸ by Emre Furkan Babacan
+</div>
