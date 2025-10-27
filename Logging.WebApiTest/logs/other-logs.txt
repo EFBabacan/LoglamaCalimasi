@@ -1,0 +1,6 @@
+2025-10-27 14:22:56.850 +03:00 [Information] Hava durumu verileri için bir GET isteği geldi. 
+2025-10-27 14:22:56.855 +03:00 [Warning] Bu bir uyarı logu testidir. 
+2025-10-27 14:22:56.855 +03:00 [Information] Hava durumu verileri başarıyla oluşturuldu. 
+2025-10-27 14:23:06.858 +03:00 [Information] Hava durumu verileri için bir GET isteği geldi. 
+2025-10-27 14:23:06.859 +03:00 [Warning] Bu bir uyarı logu testidir. 
+2025-10-27 14:23:06.859 +03:00 [Information] Hava durumu verileri başarıyla oluşturuldu. 

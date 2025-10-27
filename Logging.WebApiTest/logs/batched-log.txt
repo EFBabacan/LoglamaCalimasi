@@ -55,3 +55,382 @@
 2025-10-14 16:15:42.285 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/favicon-32x32.png""" - null null 
 2025-10-14 16:15:42.285 +03:00 [Information] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"' 
 2025-10-14 16:15:42.285 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/favicon-32x32.png""" - 200 628 "image/png" 6.5845ms 
+2025-10-20 14:47:00.057 +03:00 [Information] Now listening on: "https://localhost:7127" 
+2025-10-20 14:47:00.065 +03:00 [Information] Now listening on: "http://localhost:5258" 
+2025-10-20 14:47:05.066 +03:00 [Information] Application started. Press Ctrl+C to shut down. 
+2025-10-20 14:47:05.066 +03:00 [Information] Hosting environment: "Development" 
+2025-10-20 14:47:05.067 +03:00 [Information] Content root path: "C:\Users\ensfr\source\repos\PostaGuvercini.Logging\Logging.WebApiTest" 
+2025-10-20 14:47:05.067 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/_vs/browserLink""" - null null 
+2025-10-20 14:47:05.067 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/_framework/aspnetcore-browser-refresh.js""" - null null 
+2025-10-20 14:47:05.067 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/_framework/aspnetcore-browser-refresh.js""" - 200 16521 "application/javascript; charset=utf-8" 30.2395ms 
+2025-10-20 14:47:05.067 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 102.4104ms 
+2025-10-20 14:47:05.067 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/v1/swagger.json""" - null null 
+2025-10-20 14:47:05.067 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 40.5388ms 
+2025-10-20 14:48:05.113 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - null null 
+2025-10-20 14:48:05.113 +03:00 [Information] Executing endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-20 14:48:05.113 +03:00 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Logging.WebApiTest.WeatherForecast] Get()" on controller "Logging.WebApiTest.Controllers.WeatherForecastController" ("Logging.WebApiTest"). 
+2025-10-20 14:48:05.113 +03:00 [Information] Executing action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" - Validation state: Valid 
+2025-10-20 14:48:05.113 +03:00 [Information] Hava durumu verileri için bir GET isteği geldi. 
+2025-10-20 14:48:05.113 +03:00 [Warning] Bu bir uyarı logu testidir. 
+2025-10-20 14:48:05.113 +03:00 [Information] Hava durumu verileri başarıyla oluşturuldu. 
+2025-10-20 14:48:05.113 +03:00 [Information] Executed action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 6.765ms. 
+2025-10-20 14:48:05.113 +03:00 [Information] Executing "ObjectResult", writing value of type '"Logging.WebApiTest.WeatherForecast[]"'. 
+2025-10-20 14:48:05.113 +03:00 [Information] Executed action "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" in 106.3064ms 
+2025-10-20 14:48:05.113 +03:00 [Information] Executed endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-20 14:48:05.113 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - 200 null "application/json; charset=utf-8" 147.166ms 
+2025-10-20 14:48:10.118 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - null null 
+2025-10-20 14:48:10.118 +03:00 [Information] Executing endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-20 14:48:10.118 +03:00 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Logging.WebApiTest.WeatherForecast] Get()" on controller "Logging.WebApiTest.Controllers.WeatherForecastController" ("Logging.WebApiTest"). 
+2025-10-20 14:48:10.118 +03:00 [Information] Executing action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" - Validation state: Valid 
+2025-10-20 14:48:10.118 +03:00 [Information] Hava durumu verileri için bir GET isteği geldi. 
+2025-10-20 14:48:10.118 +03:00 [Warning] Bu bir uyarı logu testidir. 
+2025-10-20 14:48:10.118 +03:00 [Information] Hava durumu verileri başarıyla oluşturuldu. 
+2025-10-20 14:48:10.118 +03:00 [Information] Executed action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 2.0985ms. 
+2025-10-20 14:48:10.118 +03:00 [Information] Executing "ObjectResult", writing value of type '"Logging.WebApiTest.WeatherForecast[]"'. 
+2025-10-20 14:48:10.118 +03:00 [Information] Executed action "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" in 26.7054ms 
+2025-10-20 14:48:10.118 +03:00 [Information] Executed endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-20 14:48:10.118 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - 200 null "application/json; charset=utf-8" 35.8618ms 
+2025-10-20 15:14:12.538 +03:00 [Information] Now listening on: "https://localhost:7127" 
+2025-10-20 15:14:12.543 +03:00 [Information] Now listening on: "http://localhost:5258" 
+2025-10-20 15:14:17.568 +03:00 [Information] Application started. Press Ctrl+C to shut down. 
+2025-10-20 15:14:17.568 +03:00 [Information] Hosting environment: "Development" 
+2025-10-20 15:14:17.568 +03:00 [Information] Content root path: "C:\Users\ensfr\source\repos\PostaGuvercini.Logging\Logging.WebApiTest" 
+2025-10-20 15:14:17.568 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/_vs/browserLink""" - null null 
+2025-10-20 15:14:17.568 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/_framework/aspnetcore-browser-refresh.js""" - null null 
+2025-10-20 15:14:17.568 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/_framework/aspnetcore-browser-refresh.js""" - 200 16521 "application/javascript; charset=utf-8" 41.2451ms 
+2025-10-20 15:14:17.568 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 60.6436ms 
+2025-10-20 15:14:17.568 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/v1/swagger.json""" - null null 
+2025-10-20 15:14:17.568 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 36.5892ms 
+2025-10-24 16:23:55.475 +03:00 [Information] Now listening on: "https://localhost:7127" 
+2025-10-24 16:23:55.481 +03:00 [Information] Now listening on: "http://localhost:5258" 
+2025-10-24 16:24:00.503 +03:00 [Information] Application started. Press Ctrl+C to shut down. 
+2025-10-24 16:24:00.503 +03:00 [Information] Hosting environment: "Development" 
+2025-10-24 16:24:00.503 +03:00 [Information] Content root path: "C:\Users\ensfr\source\repos\PostaGuvercini.Logging\Logging.WebApiTest" 
+2025-10-24 16:24:00.503 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/index.html""" - null null 
+2025-10-24 16:24:00.503 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 183.0023ms 
+2025-10-24 16:24:00.503 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/_vs/browserLink""" - null null 
+2025-10-24 16:24:00.503 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/_framework/aspnetcore-browser-refresh.js""" - null null 
+2025-10-24 16:24:00.503 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/_framework/aspnetcore-browser-refresh.js""" - 200 16521 "application/javascript; charset=utf-8" 34.8947ms 
+2025-10-24 16:24:00.503 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 98.7817ms 
+2025-10-24 16:24:00.503 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/v1/swagger.json""" - null null 
+2025-10-24 16:24:00.503 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 9.2429ms 
+2025-10-24 16:24:23.080 +03:00 [Information] Now listening on: "https://localhost:7127" 
+2025-10-24 16:24:23.086 +03:00 [Information] Now listening on: "http://localhost:5258" 
+2025-10-24 16:24:28.104 +03:00 [Information] Application started. Press Ctrl+C to shut down. 
+2025-10-24 16:24:28.104 +03:00 [Information] Hosting environment: "Development" 
+2025-10-24 16:24:28.104 +03:00 [Information] Content root path: "C:\Users\ensfr\source\repos\PostaGuvercini.Logging\Logging.WebApiTest" 
+2025-10-24 16:24:28.104 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/index.html""" - null null 
+2025-10-24 16:24:28.104 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 245.3713ms 
+2025-10-24 16:24:28.104 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/_framework/aspnetcore-browser-refresh.js""" - null null 
+2025-10-24 16:24:28.105 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/_vs/browserLink""" - null null 
+2025-10-24 16:24:28.105 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/_framework/aspnetcore-browser-refresh.js""" - 200 16521 "application/javascript; charset=utf-8" 18.1886ms 
+2025-10-24 16:24:28.105 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 77.9809ms 
+2025-10-24 16:24:28.105 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/v1/swagger.json""" - null null 
+2025-10-24 16:24:28.105 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 9.8389ms 
+2025-10-24 16:24:28.105 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/favicon-32x32.png""" - null null 
+2025-10-24 16:24:28.105 +03:00 [Information] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"' 
+2025-10-24 16:24:28.105 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/favicon-32x32.png""" - 200 628 "image/png" 37.0179ms 
+2025-10-24 16:25:05.565 +03:00 [Information] Now listening on: "https://localhost:7127" 
+2025-10-24 16:25:10.594 +03:00 [Information] Now listening on: "http://localhost:5258" 
+2025-10-24 16:25:10.594 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/index.html""" - null null 
+2025-10-24 16:25:10.594 +03:00 [Information] Application started. Press Ctrl+C to shut down. 
+2025-10-24 16:25:10.594 +03:00 [Information] Hosting environment: "Development" 
+2025-10-24 16:25:10.594 +03:00 [Information] Content root path: "C:\Users\ensfr\source\repos\PostaGuvercini.Logging\Logging.WebApiTest" 
+2025-10-24 16:25:10.594 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 219.083ms 
+2025-10-24 16:25:10.594 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/_framework/aspnetcore-browser-refresh.js""" - null null 
+2025-10-24 16:25:10.594 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/_vs/browserLink""" - null null 
+2025-10-24 16:25:10.594 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/_framework/aspnetcore-browser-refresh.js""" - 200 16521 "application/javascript; charset=utf-8" 18.1829ms 
+2025-10-24 16:25:10.594 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 76.1659ms 
+2025-10-24 16:25:10.594 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/v1/swagger.json""" - null null 
+2025-10-24 16:25:10.594 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 11.7418ms 
+2025-10-24 16:32:26.267 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - null null 
+2025-10-24 16:32:26.268 +03:00 [Information] Executing endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-24 16:32:26.268 +03:00 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Logging.WebApiTest.WeatherForecast] Get()" on controller "Logging.WebApiTest.Controllers.WeatherForecastController" ("Logging.WebApiTest"). 
+2025-10-24 16:32:26.268 +03:00 [Information] Executing action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" - Validation state: Valid 
+2025-10-24 16:32:26.268 +03:00 [Information] Hava durumu verileri için bir GET isteği geldi. 
+2025-10-24 16:32:26.268 +03:00 [Warning] Bu bir uyarı logu testidir. 
+2025-10-24 16:32:26.268 +03:00 [Information] Hava durumu verileri başarıyla oluşturuldu. 
+2025-10-24 16:32:26.268 +03:00 [Information] Executed action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 5.8262ms. 
+2025-10-24 16:32:26.268 +03:00 [Information] Executing "ObjectResult", writing value of type '"Logging.WebApiTest.WeatherForecast[]"'. 
+2025-10-24 16:32:26.268 +03:00 [Information] Executed action "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" in 68.8585ms 
+2025-10-24 16:32:26.268 +03:00 [Information] Executed endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-24 16:32:26.268 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - 200 null "application/json; charset=utf-8" 108.1304ms 
+2025-10-24 16:32:26.268 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - null null 
+2025-10-24 16:32:26.268 +03:00 [Information] Executing endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-24 16:32:26.268 +03:00 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Logging.WebApiTest.WeatherForecast] Get()" on controller "Logging.WebApiTest.Controllers.WeatherForecastController" ("Logging.WebApiTest"). 
+2025-10-24 16:32:26.268 +03:00 [Information] Executing action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" - Validation state: Valid 
+2025-10-24 16:32:26.268 +03:00 [Information] Hava durumu verileri için bir GET isteği geldi. 
+2025-10-24 16:32:26.268 +03:00 [Warning] Bu bir uyarı logu testidir. 
+2025-10-24 16:32:26.268 +03:00 [Information] Hava durumu verileri başarıyla oluşturuldu. 
+2025-10-24 16:32:26.268 +03:00 [Information] Executed action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 2.9203ms. 
+2025-10-24 16:32:26.268 +03:00 [Information] Executing "ObjectResult", writing value of type '"Logging.WebApiTest.WeatherForecast[]"'. 
+2025-10-24 16:32:26.268 +03:00 [Information] Executed action "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" in 21.6683ms 
+2025-10-24 16:32:26.268 +03:00 [Information] Executed endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-24 16:32:26.268 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - 200 null "application/json; charset=utf-8" 39.0204ms 
+2025-10-24 16:32:26.268 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - null null 
+2025-10-24 16:32:26.268 +03:00 [Information] Executing endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-24 16:32:26.268 +03:00 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Logging.WebApiTest.WeatherForecast] Get()" on controller "Logging.WebApiTest.Controllers.WeatherForecastController" ("Logging.WebApiTest"). 
+2025-10-24 16:32:26.268 +03:00 [Information] Executing action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" - Validation state: Valid 
+2025-10-24 16:32:26.268 +03:00 [Information] Hava durumu verileri için bir GET isteği geldi. 
+2025-10-24 16:32:26.268 +03:00 [Warning] Bu bir uyarı logu testidir. 
+2025-10-24 16:32:26.268 +03:00 [Information] Hava durumu verileri başarıyla oluşturuldu. 
+2025-10-24 16:32:26.268 +03:00 [Information] Executed action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 1.8854ms. 
+2025-10-24 16:32:26.268 +03:00 [Information] Executing "ObjectResult", writing value of type '"Logging.WebApiTest.WeatherForecast[]"'. 
+2025-10-24 16:32:26.268 +03:00 [Information] Executed action "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" in 16.9884ms 
+2025-10-24 16:32:26.268 +03:00 [Information] Executed endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-24 16:32:26.268 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - 200 null "application/json; charset=utf-8" 27.2611ms 
+2025-10-24 16:32:26.268 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - null null 
+2025-10-24 16:32:26.268 +03:00 [Information] Executing endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-24 16:32:26.268 +03:00 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Logging.WebApiTest.WeatherForecast] Get()" on controller "Logging.WebApiTest.Controllers.WeatherForecastController" ("Logging.WebApiTest"). 
+2025-10-24 16:32:26.268 +03:00 [Information] Executing action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" - Validation state: Valid 
+2025-10-24 16:32:26.268 +03:00 [Information] Hava durumu verileri için bir GET isteği geldi. 
+2025-10-24 16:32:26.268 +03:00 [Warning] Bu bir uyarı logu testidir. 
+2025-10-24 16:32:26.268 +03:00 [Information] Hava durumu verileri başarıyla oluşturuldu. 
+2025-10-24 16:32:26.268 +03:00 [Information] Executed action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 2.7001ms. 
+2025-10-24 16:32:26.268 +03:00 [Information] Executing "ObjectResult", writing value of type '"Logging.WebApiTest.WeatherForecast[]"'. 
+2025-10-24 16:32:26.268 +03:00 [Information] Executed action "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" in 17.2718ms 
+2025-10-24 16:32:26.268 +03:00 [Information] Executed endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-24 16:32:26.268 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - 200 null "application/json; charset=utf-8" 26.9223ms 
+2025-10-24 16:32:26.268 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - null null 
+2025-10-24 16:32:26.268 +03:00 [Information] Executing endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-24 16:32:26.268 +03:00 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Logging.WebApiTest.WeatherForecast] Get()" on controller "Logging.WebApiTest.Controllers.WeatherForecastController" ("Logging.WebApiTest"). 
+2025-10-24 16:32:26.268 +03:00 [Information] Executing action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" - Validation state: Valid 
+2025-10-24 16:32:26.268 +03:00 [Information] Hava durumu verileri için bir GET isteği geldi. 
+2025-10-24 16:32:26.268 +03:00 [Warning] Bu bir uyarı logu testidir. 
+2025-10-24 16:32:26.268 +03:00 [Information] Hava durumu verileri başarıyla oluşturuldu. 
+2025-10-24 16:32:26.268 +03:00 [Information] Executed action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 2.8782ms. 
+2025-10-24 16:32:26.268 +03:00 [Information] Executing "ObjectResult", writing value of type '"Logging.WebApiTest.WeatherForecast[]"'. 
+2025-10-24 16:32:26.268 +03:00 [Information] Executed action "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" in 16.5747ms 
+2025-10-24 16:32:26.268 +03:00 [Information] Executed endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-24 16:32:26.268 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - 200 null "application/json; charset=utf-8" 25.1669ms 
+2025-10-24 16:32:26.268 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - null null 
+2025-10-24 16:32:26.268 +03:00 [Information] Executing endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-24 16:32:26.268 +03:00 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Logging.WebApiTest.WeatherForecast] Get()" on controller "Logging.WebApiTest.Controllers.WeatherForecastController" ("Logging.WebApiTest"). 
+2025-10-24 16:32:26.268 +03:00 [Information] Executing action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" - Validation state: Valid 
+2025-10-24 16:32:26.268 +03:00 [Information] Hava durumu verileri için bir GET isteği geldi. 
+2025-10-24 16:32:26.268 +03:00 [Warning] Bu bir uyarı logu testidir. 
+2025-10-24 16:32:26.268 +03:00 [Information] Hava durumu verileri başarıyla oluşturuldu. 
+2025-10-24 16:32:26.268 +03:00 [Information] Executed action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 2.2726ms. 
+2025-10-24 16:32:26.268 +03:00 [Information] Executing "ObjectResult", writing value of type '"Logging.WebApiTest.WeatherForecast[]"'. 
+2025-10-24 16:32:26.268 +03:00 [Information] Executed action "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" in 17.8843ms 
+2025-10-24 16:32:26.268 +03:00 [Information] Executed endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-24 16:32:26.268 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - 200 null "application/json; charset=utf-8" 29.3089ms 
+2025-10-24 16:32:26.268 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - null null 
+2025-10-24 16:32:26.268 +03:00 [Information] Executing endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-24 16:32:26.268 +03:00 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Logging.WebApiTest.WeatherForecast] Get()" on controller "Logging.WebApiTest.Controllers.WeatherForecastController" ("Logging.WebApiTest"). 
+2025-10-24 16:32:26.268 +03:00 [Information] Executing action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" - Validation state: Valid 
+2025-10-24 16:32:26.268 +03:00 [Information] Hava durumu verileri için bir GET isteği geldi. 
+2025-10-24 16:32:26.268 +03:00 [Warning] Bu bir uyarı logu testidir. 
+2025-10-24 16:32:26.268 +03:00 [Information] Hava durumu verileri başarıyla oluşturuldu. 
+2025-10-24 16:32:26.268 +03:00 [Information] Executed action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 2.024ms. 
+2025-10-24 16:32:26.268 +03:00 [Information] Executing "ObjectResult", writing value of type '"Logging.WebApiTest.WeatherForecast[]"'. 
+2025-10-24 16:32:26.268 +03:00 [Information] Executed action "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" in 16.9007ms 
+2025-10-24 16:32:26.268 +03:00 [Information] Executed endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-24 16:32:26.268 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - 200 null "application/json; charset=utf-8" 38.5224ms 
+2025-10-24 16:32:26.268 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - null null 
+2025-10-24 16:32:26.268 +03:00 [Information] Executing endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-24 16:32:26.268 +03:00 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Logging.WebApiTest.WeatherForecast] Get()" on controller "Logging.WebApiTest.Controllers.WeatherForecastController" ("Logging.WebApiTest"). 
+2025-10-24 16:32:26.268 +03:00 [Information] Executing action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" - Validation state: Valid 
+2025-10-24 16:32:26.268 +03:00 [Information] Hava durumu verileri için bir GET isteği geldi. 
+2025-10-24 16:32:26.268 +03:00 [Warning] Bu bir uyarı logu testidir. 
+2025-10-24 16:32:26.268 +03:00 [Information] Hava durumu verileri başarıyla oluşturuldu. 
+2025-10-24 16:32:26.268 +03:00 [Information] Executed action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 2.1552ms. 
+2025-10-24 16:32:26.268 +03:00 [Information] Executing "ObjectResult", writing value of type '"Logging.WebApiTest.WeatherForecast[]"'. 
+2025-10-24 16:32:26.268 +03:00 [Information] Executed action "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" in 14.9985ms 
+2025-10-24 16:32:26.268 +03:00 [Information] Executed endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-24 16:32:26.268 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - 200 null "application/json; charset=utf-8" 24.8817ms 
+2025-10-24 16:32:31.277 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - null null 
+2025-10-24 16:32:31.277 +03:00 [Information] Executing endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-24 16:32:31.277 +03:00 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Logging.WebApiTest.WeatherForecast] Get()" on controller "Logging.WebApiTest.Controllers.WeatherForecastController" ("Logging.WebApiTest"). 
+2025-10-24 16:32:31.277 +03:00 [Information] Executing action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" - Validation state: Valid 
+2025-10-24 16:32:31.277 +03:00 [Information] Hava durumu verileri için bir GET isteği geldi. 
+2025-10-24 16:32:31.277 +03:00 [Warning] Bu bir uyarı logu testidir. 
+2025-10-24 16:32:31.277 +03:00 [Information] Hava durumu verileri başarıyla oluşturuldu. 
+2025-10-24 16:32:31.277 +03:00 [Information] Executed action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 1.715ms. 
+2025-10-24 16:32:31.277 +03:00 [Information] Executing "ObjectResult", writing value of type '"Logging.WebApiTest.WeatherForecast[]"'. 
+2025-10-24 16:32:31.277 +03:00 [Information] Executed action "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" in 15.7011ms 
+2025-10-24 16:32:31.277 +03:00 [Information] Executed endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-24 16:32:31.277 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - 200 null "application/json; charset=utf-8" 32.0099ms 
+2025-10-24 16:32:31.277 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - null null 
+2025-10-24 16:32:31.277 +03:00 [Information] Executing endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-24 16:32:31.277 +03:00 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Logging.WebApiTest.WeatherForecast] Get()" on controller "Logging.WebApiTest.Controllers.WeatherForecastController" ("Logging.WebApiTest"). 
+2025-10-24 16:32:31.277 +03:00 [Information] Executing action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" - Validation state: Valid 
+2025-10-24 16:32:31.277 +03:00 [Information] Hava durumu verileri için bir GET isteği geldi. 
+2025-10-24 16:32:31.277 +03:00 [Warning] Bu bir uyarı logu testidir. 
+2025-10-24 16:32:31.277 +03:00 [Information] Hava durumu verileri başarıyla oluşturuldu. 
+2025-10-24 16:32:31.277 +03:00 [Information] Executed action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 1.9036ms. 
+2025-10-24 16:32:31.277 +03:00 [Information] Executing "ObjectResult", writing value of type '"Logging.WebApiTest.WeatherForecast[]"'. 
+2025-10-24 16:32:31.277 +03:00 [Information] Executed action "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" in 14.7922ms 
+2025-10-24 16:32:31.277 +03:00 [Information] Executed endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-24 16:32:31.277 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - 200 null "application/json; charset=utf-8" 26.5515ms 
+2025-10-24 16:32:31.277 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - null null 
+2025-10-24 16:32:31.277 +03:00 [Information] Executing endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-24 16:32:31.277 +03:00 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Logging.WebApiTest.WeatherForecast] Get()" on controller "Logging.WebApiTest.Controllers.WeatherForecastController" ("Logging.WebApiTest"). 
+2025-10-24 16:32:31.277 +03:00 [Information] Executing action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" - Validation state: Valid 
+2025-10-24 16:32:31.277 +03:00 [Information] Hava durumu verileri için bir GET isteği geldi. 
+2025-10-24 16:32:31.277 +03:00 [Warning] Bu bir uyarı logu testidir. 
+2025-10-24 16:32:31.277 +03:00 [Information] Hava durumu verileri başarıyla oluşturuldu. 
+2025-10-24 16:32:31.277 +03:00 [Information] Executed action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 2.3467ms. 
+2025-10-24 16:32:31.277 +03:00 [Information] Executing "ObjectResult", writing value of type '"Logging.WebApiTest.WeatherForecast[]"'. 
+2025-10-24 16:32:31.277 +03:00 [Information] Executed action "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" in 15.2054ms 
+2025-10-24 16:32:31.277 +03:00 [Information] Executed endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-24 16:32:31.277 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - 200 null "application/json; charset=utf-8" 25.2449ms 
+2025-10-24 16:32:31.277 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - null null 
+2025-10-24 16:32:31.277 +03:00 [Information] Executing endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-24 16:32:31.277 +03:00 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Logging.WebApiTest.WeatherForecast] Get()" on controller "Logging.WebApiTest.Controllers.WeatherForecastController" ("Logging.WebApiTest"). 
+2025-10-24 16:32:31.277 +03:00 [Information] Executing action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" - Validation state: Valid 
+2025-10-24 16:32:31.277 +03:00 [Information] Hava durumu verileri için bir GET isteği geldi. 
+2025-10-24 16:32:31.277 +03:00 [Warning] Bu bir uyarı logu testidir. 
+2025-10-24 16:32:31.277 +03:00 [Information] Hava durumu verileri başarıyla oluşturuldu. 
+2025-10-24 16:32:31.277 +03:00 [Information] Executed action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 1.9231ms. 
+2025-10-24 16:32:31.277 +03:00 [Information] Executing "ObjectResult", writing value of type '"Logging.WebApiTest.WeatherForecast[]"'. 
+2025-10-24 16:32:31.277 +03:00 [Information] Executed action "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" in 15.4208ms 
+2025-10-24 16:32:31.277 +03:00 [Information] Executed endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-24 16:32:31.277 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - 200 null "application/json; charset=utf-8" 28.8415ms 
+2025-10-24 16:32:31.277 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - null null 
+2025-10-24 16:32:31.277 +03:00 [Information] Executing endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-24 16:32:31.277 +03:00 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Logging.WebApiTest.WeatherForecast] Get()" on controller "Logging.WebApiTest.Controllers.WeatherForecastController" ("Logging.WebApiTest"). 
+2025-10-24 16:32:31.277 +03:00 [Information] Executing action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" - Validation state: Valid 
+2025-10-24 16:32:31.277 +03:00 [Information] Hava durumu verileri için bir GET isteği geldi. 
+2025-10-24 16:32:31.277 +03:00 [Warning] Bu bir uyarı logu testidir. 
+2025-10-24 16:32:31.277 +03:00 [Information] Hava durumu verileri başarıyla oluşturuldu. 
+2025-10-24 16:32:31.277 +03:00 [Information] Executed action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 1.7542ms. 
+2025-10-24 16:32:31.277 +03:00 [Information] Executing "ObjectResult", writing value of type '"Logging.WebApiTest.WeatherForecast[]"'. 
+2025-10-24 16:32:31.277 +03:00 [Information] Executed action "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" in 16.055ms 
+2025-10-24 16:32:31.277 +03:00 [Information] Executed endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-24 16:32:31.277 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - 200 null "application/json; charset=utf-8" 29.0819ms 
+2025-10-24 16:32:31.277 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - null null 
+2025-10-24 16:32:31.277 +03:00 [Information] Executing endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-24 16:32:31.277 +03:00 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Logging.WebApiTest.WeatherForecast] Get()" on controller "Logging.WebApiTest.Controllers.WeatherForecastController" ("Logging.WebApiTest"). 
+2025-10-24 16:32:31.277 +03:00 [Information] Executing action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" - Validation state: Valid 
+2025-10-24 16:32:31.277 +03:00 [Information] Hava durumu verileri için bir GET isteği geldi. 
+2025-10-24 16:32:31.277 +03:00 [Warning] Bu bir uyarı logu testidir. 
+2025-10-24 16:32:31.277 +03:00 [Information] Hava durumu verileri başarıyla oluşturuldu. 
+2025-10-24 16:32:31.277 +03:00 [Information] Executed action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 1.4909ms. 
+2025-10-24 16:32:31.277 +03:00 [Information] Executing "ObjectResult", writing value of type '"Logging.WebApiTest.WeatherForecast[]"'. 
+2025-10-24 16:32:31.277 +03:00 [Information] Executed action "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" in 13.3401ms 
+2025-10-24 16:32:31.277 +03:00 [Information] Executed endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-24 16:32:31.277 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - 200 null "application/json; charset=utf-8" 23.8585ms 
+2025-10-24 16:32:31.277 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - null null 
+2025-10-24 16:32:31.277 +03:00 [Information] Executing endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-24 16:32:31.277 +03:00 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Logging.WebApiTest.WeatherForecast] Get()" on controller "Logging.WebApiTest.Controllers.WeatherForecastController" ("Logging.WebApiTest"). 
+2025-10-24 16:32:31.277 +03:00 [Information] Executing action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" - Validation state: Valid 
+2025-10-24 16:32:31.277 +03:00 [Information] Hava durumu verileri için bir GET isteği geldi. 
+2025-10-24 16:32:31.277 +03:00 [Warning] Bu bir uyarı logu testidir. 
+2025-10-24 16:32:31.277 +03:00 [Information] Hava durumu verileri başarıyla oluşturuldu. 
+2025-10-24 16:32:31.277 +03:00 [Information] Executed action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 1.6903ms. 
+2025-10-24 16:32:31.277 +03:00 [Information] Executing "ObjectResult", writing value of type '"Logging.WebApiTest.WeatherForecast[]"'. 
+2025-10-24 16:32:31.277 +03:00 [Information] Executed action "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" in 14.4393ms 
+2025-10-24 16:32:31.277 +03:00 [Information] Executed endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-24 16:32:31.277 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - 200 null "application/json; charset=utf-8" 25.159ms 
+2025-10-24 16:32:31.277 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - null null 
+2025-10-24 16:32:31.277 +03:00 [Information] Executing endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-24 16:32:31.277 +03:00 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Logging.WebApiTest.WeatherForecast] Get()" on controller "Logging.WebApiTest.Controllers.WeatherForecastController" ("Logging.WebApiTest"). 
+2025-10-24 16:32:31.277 +03:00 [Information] Executing action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" - Validation state: Valid 
+2025-10-24 16:32:31.277 +03:00 [Information] Hava durumu verileri için bir GET isteği geldi. 
+2025-10-24 16:32:31.277 +03:00 [Warning] Bu bir uyarı logu testidir. 
+2025-10-24 16:32:31.277 +03:00 [Information] Hava durumu verileri başarıyla oluşturuldu. 
+2025-10-24 16:32:31.277 +03:00 [Information] Executed action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 1.7523ms. 
+2025-10-24 16:32:31.277 +03:00 [Information] Executing "ObjectResult", writing value of type '"Logging.WebApiTest.WeatherForecast[]"'. 
+2025-10-24 16:32:31.277 +03:00 [Information] Executed action "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" in 15.9747ms 
+2025-10-24 16:32:31.277 +03:00 [Information] Executed endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-24 16:32:31.277 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - 200 null "application/json; charset=utf-8" 28.9846ms 
+2025-10-24 16:32:31.277 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - null null 
+2025-10-24 16:32:31.277 +03:00 [Information] Executing endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-24 16:32:31.277 +03:00 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Logging.WebApiTest.WeatherForecast] Get()" on controller "Logging.WebApiTest.Controllers.WeatherForecastController" ("Logging.WebApiTest"). 
+2025-10-24 16:32:31.277 +03:00 [Information] Executing action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" - Validation state: Valid 
+2025-10-24 16:32:31.279 +03:00 [Information] Hava durumu verileri için bir GET isteği geldi. 
+2025-10-24 16:32:31.279 +03:00 [Warning] Bu bir uyarı logu testidir. 
+2025-10-24 16:32:31.279 +03:00 [Information] Hava durumu verileri başarıyla oluşturuldu. 
+2025-10-24 16:32:31.279 +03:00 [Information] Executed action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 1.5214ms. 
+2025-10-24 16:32:31.279 +03:00 [Information] Executing "ObjectResult", writing value of type '"Logging.WebApiTest.WeatherForecast[]"'. 
+2025-10-24 16:32:31.279 +03:00 [Information] Executed action "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" in 14.9481ms 
+2025-10-24 16:32:31.279 +03:00 [Information] Executed endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-24 16:32:31.279 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - 200 null "application/json; charset=utf-8" 24.5823ms 
+2025-10-24 16:32:31.279 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - null null 
+2025-10-24 16:32:31.279 +03:00 [Information] Executing endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-24 16:32:31.279 +03:00 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Logging.WebApiTest.WeatherForecast] Get()" on controller "Logging.WebApiTest.Controllers.WeatherForecastController" ("Logging.WebApiTest"). 
+2025-10-24 16:32:31.279 +03:00 [Information] Executing action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" - Validation state: Valid 
+2025-10-24 16:32:31.279 +03:00 [Information] Hava durumu verileri için bir GET isteği geldi. 
+2025-10-24 16:32:31.279 +03:00 [Warning] Bu bir uyarı logu testidir. 
+2025-10-24 16:32:31.279 +03:00 [Information] Hava durumu verileri başarıyla oluşturuldu. 
+2025-10-24 16:32:31.279 +03:00 [Information] Executed action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 1.5599ms. 
+2025-10-24 16:32:31.279 +03:00 [Information] Executing "ObjectResult", writing value of type '"Logging.WebApiTest.WeatherForecast[]"'. 
+2025-10-24 16:32:31.279 +03:00 [Information] Executed action "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" in 17.3653ms 
+2025-10-24 16:32:31.279 +03:00 [Information] Executed endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-24 16:32:31.279 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - 200 null "application/json; charset=utf-8" 25.9367ms 
+2025-10-24 16:38:55.289 +03:00 [Information] Now listening on: "https://localhost:7127" 
+2025-10-24 16:38:55.298 +03:00 [Information] Now listening on: "http://localhost:5258" 
+2025-10-24 16:39:00.305 +03:00 [Information] Application started. Press Ctrl+C to shut down. 
+2025-10-24 16:39:00.305 +03:00 [Information] Hosting environment: "Development" 
+2025-10-24 16:39:00.305 +03:00 [Information] Content root path: "C:\Users\ensfr\source\repos\PostaGuvercini.Logging\Logging.WebApiTest" 
+2025-10-24 16:39:00.305 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/index.html""" - null null 
+2025-10-24 16:39:00.305 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 114.1578ms 
+2025-10-24 16:39:00.305 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/_framework/aspnetcore-browser-refresh.js""" - null null 
+2025-10-24 16:39:00.305 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/_framework/aspnetcore-browser-refresh.js""" - 200 16521 "application/javascript; charset=utf-8" 14.5304ms 
+2025-10-24 16:39:00.305 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/_vs/browserLink""" - null null 
+2025-10-24 16:39:00.305 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 42.6623ms 
+2025-10-24 16:39:00.305 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/v1/swagger.json""" - null null 
+2025-10-24 16:39:00.305 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 6.8959ms 
+2025-10-24 16:39:10.315 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - null null 
+2025-10-24 16:39:10.315 +03:00 [Information] Executing endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-24 16:39:10.315 +03:00 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Logging.WebApiTest.WeatherForecast] Get()" on controller "Logging.WebApiTest.Controllers.WeatherForecastController" ("Logging.WebApiTest"). 
+2025-10-24 16:39:10.315 +03:00 [Information] Executing action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" - Validation state: Valid 
+2025-10-24 16:39:10.315 +03:00 [Information] Hava durumu verileri için bir GET isteği geldi. 
+2025-10-24 16:39:10.315 +03:00 [Warning] Bu bir uyarı logu testidir. 
+2025-10-24 16:39:10.315 +03:00 [Information] Hava durumu verileri başarıyla oluşturuldu. 
+2025-10-24 16:39:10.315 +03:00 [Information] Executed action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 4.4069ms. 
+2025-10-24 16:39:10.315 +03:00 [Information] Executing "ObjectResult", writing value of type '"Logging.WebApiTest.WeatherForecast[]"'. 
+2025-10-24 16:39:10.315 +03:00 [Information] Executed action "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" in 56.178ms 
+2025-10-24 16:39:10.315 +03:00 [Information] Executed endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-24 16:39:10.315 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - 200 null "application/json; charset=utf-8" 98.0402ms 
+2025-10-24 16:39:15.320 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - null null 
+2025-10-24 16:39:15.320 +03:00 [Information] Executing endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-24 16:39:15.320 +03:00 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Logging.WebApiTest.WeatherForecast] Get()" on controller "Logging.WebApiTest.Controllers.WeatherForecastController" ("Logging.WebApiTest"). 
+2025-10-24 16:39:15.320 +03:00 [Information] Executing action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" - Validation state: Valid 
+2025-10-24 16:39:15.320 +03:00 [Information] Hava durumu verileri için bir GET isteği geldi. 
+2025-10-24 16:39:15.320 +03:00 [Warning] Bu bir uyarı logu testidir. 
+2025-10-24 16:39:15.320 +03:00 [Error] Hava durumu verileri oluşturulurken bir hata oluştu. System.InvalidOperationException: İsteğe bağlı bir hata oluşturuldu!
+   at Logging.WebApiTest.Controllers.WeatherForecastController.Get() in C:\Users\ensfr\source\repos\PostaGuvercini.Logging\Logging.WebApiTest\Controllers\WeatherForecastController.cs:line 43
+2025-10-24 16:39:15.320 +03:00 [Information] Executed action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 115.2205ms. 
+2025-10-24 16:39:15.320 +03:00 [Information] Executing "ObjectResult", writing value of type '"System.Linq.EmptyPartition`1[[Logging.WebApiTest.WeatherForecast, Logging.WebApiTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. 
+2025-10-24 16:39:15.320 +03:00 [Information] Executed action "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" in 137.6275ms 
+2025-10-24 16:39:15.320 +03:00 [Information] Executed endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-24 16:39:15.320 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - 200 null "application/json; charset=utf-8" 153.0444ms 
+2025-10-27 14:17:45.000 +03:00 [Information] Now listening on: "https://localhost:7127" 
+2025-10-27 14:17:45.009 +03:00 [Information] Now listening on: "http://localhost:5258" 
+2025-10-27 14:17:50.021 +03:00 [Information] Application started. Press Ctrl+C to shut down. 
+2025-10-27 14:17:50.021 +03:00 [Information] Hosting environment: "Development" 
+2025-10-27 14:17:50.021 +03:00 [Information] Content root path: "C:\Users\ensfr\source\repos\PostaGuvercini.Logging\Logging.WebApiTest" 
+2025-10-27 14:17:50.021 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/index.html""" - null null 
+2025-10-27 14:17:50.021 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 213.4809ms 
+2025-10-27 14:17:50.021 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/_vs/browserLink""" - null null 
+2025-10-27 14:17:50.021 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/_framework/aspnetcore-browser-refresh.js""" - null null 
+2025-10-27 14:17:50.021 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/_framework/aspnetcore-browser-refresh.js""" - 200 16521 "application/javascript; charset=utf-8" 31.2798ms 
+2025-10-27 14:17:50.021 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 71.1237ms 
+2025-10-27 14:17:50.021 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/v1/swagger.json""" - null null 
+2025-10-27 14:17:50.021 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 9.6848ms 
+2025-10-27 14:17:55.029 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - null null 
+2025-10-27 14:17:55.029 +03:00 [Information] Executing endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-27 14:17:55.029 +03:00 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Logging.WebApiTest.WeatherForecast] Get()" on controller "Logging.WebApiTest.Controllers.WeatherForecastController" ("Logging.WebApiTest"). 
+2025-10-27 14:17:55.029 +03:00 [Information] Executing action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" - Validation state: Valid 
+2025-10-27 14:17:55.029 +03:00 [Information] Hava durumu verileri için bir GET isteği geldi. 
+2025-10-27 14:17:55.029 +03:00 [Warning] Bu bir uyarı logu testidir. 
+2025-10-27 14:17:55.029 +03:00 [Information] Hava durumu verileri başarıyla oluşturuldu. 
+2025-10-27 14:17:55.029 +03:00 [Information] Executed action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 4.0436ms. 
+2025-10-27 14:17:55.029 +03:00 [Information] Executing "ObjectResult", writing value of type '"Logging.WebApiTest.WeatherForecast[]"'. 
+2025-10-27 14:17:55.029 +03:00 [Information] Executed action "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" in 61.1937ms 
+2025-10-27 14:17:55.029 +03:00 [Information] Executed endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-27 14:17:55.029 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - 200 null "application/json; charset=utf-8" 97.5603ms 
+2025-10-27 14:17:55.029 +03:00 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - null null 
+2025-10-27 14:17:55.029 +03:00 [Information] Executing endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-27 14:17:55.029 +03:00 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Logging.WebApiTest.WeatherForecast] Get()" on controller "Logging.WebApiTest.Controllers.WeatherForecastController" ("Logging.WebApiTest"). 
+2025-10-27 14:17:55.029 +03:00 [Information] Executing action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" - Validation state: Valid 
+2025-10-27 14:17:55.029 +03:00 [Information] Hava durumu verileri için bir GET isteği geldi. 
+2025-10-27 14:17:55.029 +03:00 [Warning] Bu bir uyarı logu testidir. 
+2025-10-27 14:17:55.029 +03:00 [Information] Hava durumu verileri başarıyla oluşturuldu. 
+2025-10-27 14:17:55.030 +03:00 [Information] Executed action method "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 4.6803ms. 
+2025-10-27 14:17:55.030 +03:00 [Information] Executing "ObjectResult", writing value of type '"Logging.WebApiTest.WeatherForecast[]"'. 
+2025-10-27 14:17:55.030 +03:00 [Information] Executed action "Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)" in 26.7578ms 
+2025-10-27 14:17:55.030 +03:00 [Information] Executed endpoint '"Logging.WebApiTest.Controllers.WeatherForecastController.Get (Logging.WebApiTest)"' 
+2025-10-27 14:17:55.030 +03:00 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7127""""/WeatherForecast""" - 200 null "application/json; charset=utf-8" 48.276ms 

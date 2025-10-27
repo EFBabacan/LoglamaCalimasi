@@ -3,11 +3,15 @@ using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
-//******************************************************************
-// DEÐÝÞÝKLÝK 1: ESKÝ SERILOG YAPILANDIRMASINI SÝLÝP BUNU EKLÝYORUZ
-// builder.Host.UseSerilog(...); satýrlarý yerine kendi metodumuzu çaðýrýyoruz.
-builder.Host.UseCustomSerilog();
-//******************************************************************
+// YENÝ, ESNEK KURULUM KODUMUZ:
+builder.Host.AddCustomLogging(loggingBuilder =>
+{
+    // Hangi adaptörü kullanmak istediðimizi burada seçiyoruz.
+    loggingBuilder.UseSerilogAdapter();
+
+    // Yarýn NLog adaptörü yazarsak:
+    // loggingBuilder.UseNLogAdapter();
+});
 
 
 // Add services to the container.
