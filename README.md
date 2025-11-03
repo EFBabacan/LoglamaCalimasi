@@ -143,16 +143,14 @@ Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICE
 
 ## 👤 Geliştirici
 
-**Emre Furkan Babacan**
+**Enes Furkan Babacan**
 
 - GitHub: [@EFBabacan](https://github.com/EFBabacan)
 
 ## 🌟 Teşekkürler
 
-Bu projeyi beğendiyseniz ⭐ vermeyi unutmayın!
 
 ---
 
-<div align="center">
-Made with ❤️ by Emre Furkan Babacan
+<div align="center
 </div>
